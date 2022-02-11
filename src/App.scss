@@ -15,10 +15,11 @@
     margin-top: 46px;
     margin-left: 23px;
   }
-  &__nav {
-    display: flex;
-    flex-direction: column;
-  }
+}
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .container {
   width: calc(100% - 240px);
@@ -31,5 +32,5 @@
 }
 .content {
   width: 100%;
-  background-color: aquamarine;
+  background-color: $baseBg;
 }

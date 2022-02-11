@@ -11,10 +11,14 @@ const App = () => {
         <nav className='menu_desktop'>
           <ul className='menu__list'>
             <li className='menu__item'>
-              <a href='#'>Dashboard</a>
+              <a href='/' className='menu__link link_active'>
+                Dashboard
+              </a>
             </li>
             <li className='menu__item'>
-              <a href='#'>Courses</a>
+              <a href='/' className='menu__link'>
+                Courses
+              </a>
             </li>
           </ul>
         </nav>
