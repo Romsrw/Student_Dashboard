@@ -1,5 +1,6 @@
 import React from "react";
 import ActivePrograms from "../activePrograms/ActivePrograms";
+import Chat from "../chat/Chat";
 import "./DashboardContent.scss";
 
 const DashboardContent = () => {
@@ -7,14 +8,16 @@ const DashboardContent = () => {
     <main className="dashboard">
       <h2 className="dashboard__title">Hello, Mia!</h2>
       <main className="dashboard__content">
-        <div className="education">
+        <section className="education">
           <ActivePrograms />
           <div className="sessions">
             <section className="session_progress"></section>
             <section className="session_upcomming"></section>
           </div>
-        </div>
-        <div className="messages"></div>
+        </section>
+        <section className="messages">
+          <Chat />
+        </section>
       </main>
     </main>
   );

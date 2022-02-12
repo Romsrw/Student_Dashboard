@@ -7,7 +7,7 @@ import Ratingnull from "../../img/Ratingnull.png";
 
 const ActivePrograms = () => {
   return (
-    <section className="programs">
+    <div className="programs">
       <div className="container">
         <h3 className="programs__title">Active Programs</h3>
         <div className="program_wrapper">
@@ -55,7 +55,7 @@ const ActivePrograms = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
