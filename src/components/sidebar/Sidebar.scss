@@ -1,4 +1,4 @@
-@import "../../main.scss"; 
+@import "../../main.scss";
 
 .sidebar {
   width: 240px;
@@ -19,12 +19,22 @@
   }
 
   &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
   }
+  &__item > img {
+    margin: 0 18px 0 46px;
+  }
+
   &__link {
     text-decoration: none;
     color: $lightPurple;
   }
+
   &__link.link_active {
     color: #fff;
+    position: relative;
   }
+  
 }
