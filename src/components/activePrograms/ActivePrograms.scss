@@ -1,7 +1,7 @@
 @import "../../main.scss";
 
 .programs {
-  padding: 26px 65px 0 25px;
+  padding: 23px 24px 0 25px;
   &__title {
     font-family: "SF Pro Display Normal";
     font-size: 16px;
@@ -54,6 +54,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 65px;
 
   &__text {
     font-family: "SF Pro Display Normal";
