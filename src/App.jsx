@@ -1,31 +1,13 @@
-import './App.scss';
-import Logo from './img/Logo.png';
+import "./App.scss";
+import Sidebar from "./components/sidebar/Sidebar";
 
 const App = () => {
   return (
-    <div className='page'>
-      <div className='sidebar'>
-        <div className='sidebar__logo'>
-          <img src={Logo} alt='logo'></img>
-        </div>
-        <nav className='menu_desktop'>
-          <ul className='menu__list'>
-            <li className='menu__item'>
-              <a href='/' className='menu__link link_active'>
-                Dashboard
-              </a>
-            </li>
-            <li className='menu__item'>
-              <a href='/' className='menu__link'>
-                Courses
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div className='container'>
-        <header className='header'>header</header>
-        <main className='content'>content</main>
+    <div className="page">
+      <Sidebar />
+      <div className="container">
+        <header className="header">header</header>
+        <main className="content">content</main>
       </div>
     </div>
   );

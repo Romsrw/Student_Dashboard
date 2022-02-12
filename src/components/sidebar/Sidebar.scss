@@ -1,0 +1,30 @@
+@import "../../main.scss"; 
+
+.sidebar {
+  width: 240px;
+  background-color: $headline;
+
+  &__logo {
+    margin-top: 46px;
+    margin-left: 23px;
+  }
+}
+.menu {
+  margin-top: 64px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+  }
+  &__link {
+    text-decoration: none;
+    color: $lightPurple;
+  }
+  &__link.link_active {
+    color: #fff;
+  }
+}
