@@ -1,12 +1,13 @@
 import "./App.scss";
 import Sidebar from "./components/sidebar/Sidebar";
+import Header from "./components/header/Header";
 
 const App = () => {
   return (
     <div className="page">
       <Sidebar />
       <div className="container">
-        <header className="header">header</header>
+        <Header />
         <main className="content">content</main>
       </div>
     </div>
