@@ -1,0 +1,64 @@
+@import "../../main.scss";
+
+.programs {
+  padding: 26px 65px 0 25px;
+  &__title {
+    font-family: "SF Pro Display Normal";
+    font-size: 16px;
+  }
+}
+.container {
+  padding-bottom: 24px;
+}
+.program_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 787px;
+  margin: 23px 0 1px 0;
+  padding-bottom: 24px;
+}
+.program_wrapper:not(:last-child) {
+  border-bottom: 1px solid $ligthGrey;
+}
+.program {
+  display: flex;
+  flex-direction: row;
+}
+.info {
+  font-family: "SF Pro Display Semi Bold";
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 16px;
+
+  &__title {
+    display: inline-block;
+    font-family: "SF Pro Display Semi Bold";
+    font-size: 10px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $purple;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2px 15px;
+  }
+  &__university {
+    margin-top: 8px;
+  }
+}
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    font-family: "SF Pro Display Normal";
+    text-align: center;
+    margin-top: 7px;
+    color: #9592a6;
+  }
+}
