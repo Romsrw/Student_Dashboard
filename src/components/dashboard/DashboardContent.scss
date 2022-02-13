@@ -17,7 +17,21 @@
   }
 }
 .education {
-  background-color: #fff;
   border-radius: 20px;
   width: 787px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.sessions {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.session_upcomming {
+  background-color: #fff;
+  width: 425px;
+  height: 364px;
+  border-radius: 20px;
 }
