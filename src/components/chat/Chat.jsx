@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Chat.scss";
 import SmallAvatar from "../../img/SmallAvatar.png";
 import AddIcon from "../../img/AddIcon.png";
@@ -6,8 +6,20 @@ import DianneAvatar from "../../img/DianneAvatar.png";
 import JarvisAvatar from "../../img/JarvisAvatar.png";
 import MilesAvatar from "../../img/MilesAvatar.png";
 import SuiAvatar from "../../img/SuiAvatar.png";
+import { useGetChats } from "./hooks/useGetChats";
+import { useDispatch, useSelector } from "react-redux";
+import { setChatsAction } from "../../store/actions/chatsActions";
 
 const Chat = () => {
+  const { isLoading, fetchChats } = useGetChats();
+  const dispatch = useDispatch();
+  const { chats } = useSelector((state) => state.chatsState);
+  console.log(chats);
+
+  useEffect(() => {
+    fetchChats().then((data) => dispatch(setChatsAction(data)));
+  }, []);
+
   return (
     <div className="chat">
       <div className="chat__header">

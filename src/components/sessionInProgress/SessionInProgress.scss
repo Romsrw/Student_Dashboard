@@ -1,6 +1,24 @@
+@import "../../main.scss";
+
 .session_progress {
-    width: 336px;
-    height: 304px;
-    background-color: #fff;
-    border-radius: 20px;
+  width: 336px;
+  height: 304px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px 19px 14px;
+}
+.session {
+  position: relative;
+}
+.checked {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  background-color: #fff;
+  & svg {
+    color: black;
   }
+}
