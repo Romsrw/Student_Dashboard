@@ -16,9 +16,61 @@
   right: 14px;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  background-color: #fff;
-  & svg {
-    color: black;
+  align-items: center;
+  background-color: $purple;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  &__img {
+    width: 19px;
+    height: 16px;
+    margin: 10px 19px 4.88px 18px;
+  }
+  &__text {
+    font-family: "Roboto Medium";
+    color: #fff;
+    font-size: 8px;
+    line-height: 9px;
+    margin-bottom: 10px;
+  }
+}
+.description_wrapper {
+  padding: 21px 20px 21px 17px;
+  width: 315px;
+  background-color: #fafaff;
+  position: absolute;
+  border-radius: 10px;
+  bottom: -70px;
+  left: -8px;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 14px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-family: "SF Pro Display Medium";
+    font-size: 20px;
+    font-weight: 500;
+    color: #0e1566;
+    margin:  0 0 3px 2px;
+  }
+  &__certificate {
+    font-family: "SF Pro Display Normal";
+    text-transform: uppercase;
+    color: #9592a6;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+  &__subinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
   }
 }
