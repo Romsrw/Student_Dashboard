@@ -14,13 +14,13 @@ const Sidebar = () => {
         <ul className="menu__list">
           <li className="menu__item">
             <img src={DashboardIcon} alt="DashboardIcon" />
-            <a href="#" className="menu__link link_active">
+            <a href="/" className="menu__link link_active">
               Dashboard
             </a>
           </li>
           <li className="menu__item">
             <img src={CoursesIcon} alt="CoursesIcon" />
-            <a href="#" className="menu__link">
+            <a href="/" className="menu__link">
               Courses
             </a>
           </li>

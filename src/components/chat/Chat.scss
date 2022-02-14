@@ -1,6 +1,6 @@
-@import "../../main.scss";
+@import '../../main.scss';
 
-.chat {
+.messanger {
   width: 310px;
   &__header {
     background-color: #fafaff;
@@ -14,7 +14,7 @@
     margin-bottom: 2.8px;
   }
   &__title {
-    font-family: "SF Pro Display Medium";
+    font-family: 'SF Pro Display Medium';
     font-size: 16px;
     font-weight: 500;
   }
@@ -30,7 +30,7 @@
   flex-direction: row;
   align-items: center;
   gap: 21px;
-  padding: 15px 0 27px 16px;
+  padding: 15px 0 20px 16px;
 }
 .friend {
   display: flex;
@@ -38,9 +38,35 @@
   align-items: center;
 
   &__name {
-    font-family: "SF Pro Display Regular";
+    font-family: 'SF Pro Display Regular';
     color: #77838f;
     font-size: 12px;
     letter-spacing: 1px;
+  }
+}
+.chat {
+  padding: 0 15px;
+
+  &__list {
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+    border-bottom: 1px solid $ligthGrey;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'SF Pro Display Semi Bold';
+    margin: 0 26px 0 14px;
+    color: #333269;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.02em;
   }
 }
