@@ -1,7 +1,7 @@
-@import "../../main.scss";
+@import '../../main.scss';
 
 .session_progress {
-  width: 336px;
+
   height: 304px;
   border-radius: 20px;
   background-color: #fff;
@@ -26,8 +26,9 @@
     height: 16px;
     margin: 10px 19px 4.88px 18px;
   }
+
   &__text {
-    font-family: "Roboto Medium";
+    font-family: 'Roboto Medium';
     color: #fff;
     font-size: 8px;
     line-height: 9px;
@@ -53,24 +54,57 @@
     display: flex;
     flex-direction: column;
   }
+
   &__title {
-    font-family: "SF Pro Display Medium";
+    font-family: 'SF Pro Display Medium';
     font-size: 20px;
     font-weight: 500;
     color: #0e1566;
-    margin:  0 0 3px 2px;
+    margin: 0 0 3px 2px;
   }
+
   &__certificate {
-    font-family: "SF Pro Display Normal";
+    font-family: 'SF Pro Display Regular';
     text-transform: uppercase;
     color: #9592a6;
     font-size: 11px;
     letter-spacing: 1px;
   }
+
+  &__progress_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7.8px;
+    margin-top: 8px;
+  }
+
+  &__time {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__progress {
+    font-family: 'SF Pro Display Regular Italic';
+    color: $red;
+  }
+
   &__subinfo {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+  }
+
+  &__date {
+    width: 27px;
+    height: 32px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $purple;
+    font-family: 'SF Pro Display Semi Bold';
+    font-weight: 600;
   }
 }

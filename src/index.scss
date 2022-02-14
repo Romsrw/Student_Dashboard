@@ -14,8 +14,13 @@
   font-weight: 500;
 }
 @font-face {
-  font-family: "SF Pro Display Normal";
+  font-family: "SF Pro Display Regular";
   src: url("./fonts/SF-Pro-Display-Regular.otf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "SF Pro Display Regular Italic";
+  src: url("./fonts/SF-Pro-Display-RegularItalic.otf") format("truetype");
   font-weight: 400;
 }
 @font-face {
@@ -23,6 +28,7 @@
   src: url("./fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
 }
+
 body {
   font-family: "SF Pro Display";
 }
