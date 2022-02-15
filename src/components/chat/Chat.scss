@@ -57,16 +57,51 @@
   &__item {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
   }
+
+  &__avatar {
+    margin-top: 6px;
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
     font-family: 'SF Pro Display Semi Bold';
-    margin: 0 26px 0 14px;
+    padding-left: 14px;
+    gap: 6px;
     color: #333269;
     font-weight: 600;
     font-size: 13px;
     letter-spacing: 0.02em;
+  }
+
+  &__time_wrapper {
+    min-width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__time {
+    font-family: 'SF Pro Text Regular';
+    color: #77838f;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    letter-spacing: 0.833333px;
+    margin-bottom: 18px;
+  }
+
+  &__count_msg {
+    font-family: 'SF Pro Text Medium';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: $purple;
+    text-align: center;
+    padding: 3.3px 3.3px;
   }
 }

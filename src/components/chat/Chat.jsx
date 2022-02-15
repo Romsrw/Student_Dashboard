@@ -17,9 +17,9 @@ const Chat = () => {
   const { chats } = useSelector((state) => state.chatsState);
   console.log(chats);
 
-  useEffect(() => {
-    fetchChats().then((data) => dispatch(setChatsAction(data)));
-  }, []);
+  // useEffect(() => {
+  //   fetchChats().then((data) => dispatch(setChatsAction(data)));
+  // }, []);
 
   return (
     <div className='messanger'>
@@ -73,6 +73,10 @@ const Chat = () => {
                 <span className='chat__message'>
                   Thanks, Mia. Please let me know when I can...
                 </span>
+              </div>
+              <div className="chat__time_wrapper">
+                <span className="chat__time">3 min</span>
+                <span className="chat__count_msg">1</span>
               </div>
             </li>
           </ul>
