@@ -2,6 +2,7 @@ import React from "react";
 import ActivePrograms from "../activePrograms/ActivePrograms";
 import Chat from "../chat/Chat";
 import SessionInProgress from "../sessionInProgress/SessionInProgress";
+import UpcomingSessions from "../upcomingSessions/UpcomingSessions";
 import "./DashboardContent.scss";
 
 const DashboardContent = () => {
@@ -13,7 +14,7 @@ const DashboardContent = () => {
           <ActivePrograms />
           <div className="sessions">
             <SessionInProgress />
-            <section className="session_upcomming">upcoming</section>
+            <UpcomingSessions />
           </div>
         </section>
         <section className="messages">

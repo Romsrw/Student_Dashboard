@@ -1,0 +1,20 @@
+@import "../../main.scss";
+
+.session_upcomming {
+  background-color: #fff;
+  width: 425px;
+  height: 364px;
+  border-radius: 20px;
+}
+.timetable {
+  padding: 26px 19px 19px 21px;
+
+  &__title {
+    font-family: "SF Pro Display Medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: $headline;
+    margin-bottom: 28px;
+  }
+}
