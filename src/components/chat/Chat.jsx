@@ -6,7 +6,6 @@ import DianneAvatar from "../../img/DianneAvatar.png";
 import JarvisAvatar from "../../img/JarvisAvatar.png";
 import MilesAvatar from "../../img/MilesAvatar.png";
 import SuiAvatar from "../../img/SuiAvatar.png";
-import ChatAvatar from "../../img/ChatAvatar.svg";
 import { useGetChats } from "./hooks/useGetChats";
 import { useDispatch, useSelector } from "react-redux";
 import { setChatsAction } from "../../store/actions/chatsActions";
@@ -68,7 +67,7 @@ const Chat = () => {
         <div className="chats">
           <ul className="chats__list">
             {chats.map((chat) => (
-              <ChatItem chat={chat} />
+              <ChatItem chat={chat} key={chat.id}/>
             ))}
           </ul>
         </div>
@@ -78,19 +77,3 @@ const Chat = () => {
 };
 
 export default Chat;
-
-{
-  /* <li className='chat'>
-              <img src={ChatAvatar} alt='ChatAvatar' className='chat__avatar' />
-              <div className='chat__info'>
-                <span className='chat__autor'>Sophie Kowalski</span>
-                <span className='chat__message'>
-                  Thanks, Mia. Please let me know when I can...
-                </span>
-              </div>
-              <div className='chat__time_wrapper'>
-                <span className='chat__time'>3 min</span>
-                <span className='chat__count_msg'>1</span>
-              </div>
-            </li> */
-}
