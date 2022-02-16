@@ -1,4 +1,4 @@
-@import '../../main.scss';
+@import "../../main.scss";
 
 .messanger {
   width: 310px;
@@ -15,7 +15,7 @@
     margin-bottom: 2.8px;
   }
   &__title {
-    font-family: 'SF Pro Display Medium';
+    font-family: "SF Pro Display Medium";
     font-size: 16px;
     font-weight: 500;
   }
@@ -39,68 +39,20 @@
   align-items: center;
 
   &__name {
-    font-family: 'SF Pro Text Regular';
+    font-family: "SF Pro Text Regular";
     color: #77838f;
     font-size: 12px;
     letter-spacing: 1px;
   }
 }
-.chat {
+.chats {
   padding: 0 15px;
-  height: 545px;
+  height: 520px;
   overflow-y: auto;
 
   &__list {
     margin: 0;
     list-style: none;
     border-top: 1px solid $ligthGrey;
-  }
-  &__item {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    border-bottom: 1px solid $ligthGrey;
-    margin-top: 15px;
-  }
-  &__avatar {
-    margin-top: 6px;
-    margin-bottom: 20px;
-  }
-  &__info {
-    display: flex;
-    flex-direction: column;
-    font-family: 'SF Pro Display Semi Bold';
-    padding-left: 14px;
-    gap: 6px;
-    color: #333269;
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 0.02em;
-  }
-  &__time_wrapper {
-    min-width: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  &__time {
-    font-family: 'SF Pro Text Regular';
-    color: #77838f;
-    font-size: 10px;
-    line-height: 12px;
-    text-align: right;
-    letter-spacing: 0.833333px;
-    margin-bottom: 18px;
-  }
-  &__count_msg {
-    font-family: 'SF Pro Text Medium';
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    color: #fff;
-    background-color: $purple;
-    text-align: center;
-    padding: 3.3px 3.3px;
   }
 }

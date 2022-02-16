@@ -1,0 +1,57 @@
+@import "../../main.scss";
+
+.chat {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid $ligthGrey;
+  margin-top: 15px;
+  padding-bottom: 15px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__avatar {
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-family: "SF Pro Display Semi Bold";
+    padding-left: 14px;
+    gap: 6px;
+    color: #333269;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+  &__time_wrapper {
+    min-width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__time {
+    font-family: "SF Pro Text Regular";
+    color: #77838f;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    letter-spacing: 0.833333px;
+    padding-bottom: 18px;
+  }
+  &__count_msg {
+    font-family: "SF Pro Text Medium";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: $purple;
+    text-align: center;
+    padding: 2px;
+  }
+}
