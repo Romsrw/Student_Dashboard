@@ -18,3 +18,27 @@
     margin-bottom: 28px;
   }
 }
+.table {
+  width: 100%;
+
+  &__head {
+    font-family: "SF Pro Display Regular";
+    font-size: 14px;
+    line-height: 17px;
+    color: $baseGray;
+    text-align: left;
+    vertical-align: text-top;
+    height: 50px;
+  }
+  &__date {
+    width: 70px;
+    padding-right: 31px;
+   
+  }
+  &__class {
+    width: 192px;
+  }
+  &__time {
+    width: 87px;
+  }
+}
