@@ -96,9 +96,10 @@
     height: 32px;
   }
   &__link {
-    text-decoration: none;
-    color: $purple;
     font-family: "SF Pro Display";
     font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: $purple;
   }
 }

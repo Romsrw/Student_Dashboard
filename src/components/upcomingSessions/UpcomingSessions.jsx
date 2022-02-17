@@ -23,12 +23,16 @@ const UpcomingSessions = () => {
               <TableItem />
             </tbody>
           </table>
-          {!isLimitDone && (
-            <button disabled={isLoading} onClick={fetchSessions}>
-              See All Sessions
-            </button>
-          )}
         </div>
+        {!isLimitDone && (
+          <button
+            disabled={isLoading}
+            onClick={fetchSessions}
+            className="timetable__btn"
+          >
+            See All Sessions
+          </button>
+        )}
       </div>
     </section>
   );

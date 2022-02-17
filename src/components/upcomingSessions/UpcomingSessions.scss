@@ -5,9 +5,11 @@
   width: 425px;
   height: 364px;
   border-radius: 20px;
+  position: relative;
 }
 .timetable {
   padding: 26px 19px 19px 21px;
+ 
 
   &__title {
     font-family: "SF Pro Display";
@@ -16,6 +18,17 @@
     line-height: 100%;
     color: $headline;
     margin-bottom: 28px;
+  }
+  &__btn {
+    font-family: "SF Pro Display";
+    font-weight: 600;
+    font-size: 14px;
+    color: $purple;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 19px;
+    bottom: 19px;
   }
 }
 .table {
