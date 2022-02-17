@@ -10,7 +10,7 @@
   padding: 26px 19px 19px 21px;
 
   &__title {
-    font-family: "SF Pro Display Medium";
+    font-family: "SF Pro Display";
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
@@ -22,8 +22,9 @@
   width: 100%;
 
   &__head {
-    font-family: "SF Pro Display Regular";
+    font-family: "SF Pro Display";
     font-size: 14px;
+    font-weight: 400;
     line-height: 17px;
     color: $baseGray;
     text-align: left;
@@ -33,7 +34,6 @@
   &__date {
     width: 70px;
     padding-right: 31px;
-   
   }
   &__class {
     width: 192px;

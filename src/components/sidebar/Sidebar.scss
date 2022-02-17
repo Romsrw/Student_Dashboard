@@ -17,7 +17,6 @@
     padding: 0;
     list-style: none;
   }
-
   &__item {
     display: flex;
     align-items: center;
@@ -26,16 +25,14 @@
   &__item > img {
     margin: 0 18px 0 46px;
   }
-
   &__link {
     text-decoration: none;
     color: $lightPurple;
-    font-family: "SF Pro Display Bold";
+    font-family: "SF Pro Display";
+    font-weight: 700;
   }
-
   &__link.link_active {
     color: #fff;
     position: relative;
   }
-  
 }

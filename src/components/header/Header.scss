@@ -23,9 +23,18 @@
   &__info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-right: 32px;
   }
   &__info_name {
-    font-family: "SF Pro Display Bold";
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__info_work {
+    font-family: "SF Pro Display";
+    font-size: 12px;
+    font-weight: 400;
+    color: #9592a6;
   }
 }

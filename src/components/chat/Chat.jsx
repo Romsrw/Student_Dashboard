@@ -8,18 +8,27 @@ import MilesAvatar from "../../img/MilesAvatar.png";
 import SuiAvatar from "../../img/SuiAvatar.png";
 import { useGetChats } from "./hooks/useGetChats";
 import { useDispatch, useSelector } from "react-redux";
-import { setChatsAction } from "../../store/actions/chatsActions";
+import {
+  setChatsAction,
+  setReadMessageAction,
+} from "../../store/actions/chatsActions";
 import ChatItem from "./ChatItem";
+import { useReadMessage } from "./hooks/fetchReadMessage";
 
 const Chat = () => {
   const { isLoading, fetchChats } = useGetChats();
+  const { isLoading: isLoadingRead, fetchRead } = useReadMessage();
   const dispatch = useDispatch();
   const { chats } = useSelector((state) => state.chatsState);
   console.log(chats);
 
-  // useEffect(() => {
-  //   fetchChats().then((data) => dispatch(setChatsAction(data)));
-  // }, []);
+  useEffect(() => {
+    fetchChats().then((data) => dispatch(setChatsAction(data)));
+  }, []);
+
+  const handleReadMessage = (id) => {
+    fetchRead(id).then(() => dispatch(setReadMessageAction(id)));
+  };
 
   return (
     <div className="messanger">
@@ -67,7 +76,11 @@ const Chat = () => {
         <div className="chats">
           <ul className="chats__list">
             {chats.map((chat) => (
-              <ChatItem chat={chat} key={chat.id}/>
+              <ChatItem
+                chat={chat}
+                key={chat.id}
+                ReadMessage={() => handleReadMessage(chat.id)}
+              />
             ))}
           </ul>
         </div>

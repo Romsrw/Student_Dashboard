@@ -1,7 +1,6 @@
-@import '../../main.scss';
+@import "../../main.scss";
 
 .session_progress {
-
   height: 304px;
   border-radius: 20px;
   background-color: #fff;
@@ -26,11 +25,11 @@
     height: 16px;
     margin: 10px 19px 4.88px 18px;
   }
-
   &__text {
-    font-family: 'Roboto Medium';
-    color: #fff;
+    font-family: "Roboto";
     font-size: 8px;
+    font-weight: 500;
+    color: #fff;
     line-height: 9px;
     margin-bottom: 10px;
   }
@@ -54,23 +53,21 @@
     display: flex;
     flex-direction: column;
   }
-
   &__title {
-    font-family: 'SF Pro Display Medium';
+    font-family: "SF Pro Display";
     font-size: 20px;
     font-weight: 500;
     color: #0e1566;
     margin: 0 0 3px 2px;
   }
-
   &__certificate {
-    font-family: 'SF Pro Display Regular';
-    text-transform: uppercase;
-    color: #9592a6;
+    font-family: "SF Pro Display";
     font-size: 11px;
     letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #9592a6;
   }
-
   &__progress_wrapper {
     display: flex;
     flex-direction: row;
@@ -78,33 +75,30 @@
     gap: 7.8px;
     margin-top: 8px;
   }
-
   &__time {
     width: 24px;
     height: 24px;
   }
-
   &__progress {
-    font-family: 'SF Pro Display Regular Italic';
+    font-family: "SF Pro Display";
+    font-style: italic;
+    font-weight: 400;
     color: $red;
   }
-
   &__subinfo {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
   }
-
   &__date {
     width: 27px;
     height: 32px;
   }
-
   &__link {
     text-decoration: none;
     color: $purple;
-    font-family: 'SF Pro Display Semi Bold';
+    font-family: "SF Pro Display";
     font-weight: 600;
   }
 }
