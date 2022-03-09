@@ -9,11 +9,17 @@ const UpcomingSessions = () => {
   const { isLoading, isLimitDone, fetchSessions } = useGetSessions();
   const dispatch = useDispatch();
   const { sessions } = useSelector((state) => state.sessionState);
-  console.log(sessions);
+
+  const handleGetSessions = () => {
+    fetchSessions().then((data) => dispatch(setSessionsAction(data)));
+  };
 
   useEffect(() => {
-    fetchSessions().then((data) => dispatch(setSessionsAction(data)));
+    handleGetSessions();
   }, []);
+
+  const sortedSessions = sessions.sort((a, b) => a.createdAt - b.createdAt);
+  console.log(sortedSessions);
 
   return (
     <section className="session_upcomming">
@@ -29,7 +35,7 @@ const UpcomingSessions = () => {
               </tr>
             </thead>
             <tbody>
-              {sessions.map((session) => (
+              {sortedSessions.map((session) => (
                 <TableItem session={session} key={session.id} />
               ))}
             </tbody>
@@ -38,7 +44,7 @@ const UpcomingSessions = () => {
         {!isLimitDone && (
           <button
             disabled={isLoading}
-            onClick={fetchSessions}
+            onClick={handleGetSessions}
             className="timetable__btn"
           >
             See All Sessions

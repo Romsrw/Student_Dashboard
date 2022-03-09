@@ -3,13 +3,13 @@
 .session_upcomming {
   background-color: #fff;
   width: 425px;
-  height: 364px;
   border-radius: 20px;
-  position: relative;
+  height: 363px;
+  overflow-y: auto;
 }
 .timetable {
   padding: 26px 19px 19px 21px;
- 
+  position: relative;
 
   &__title {
     font-family: "SF Pro Display";
@@ -19,6 +19,7 @@
     color: $headline;
     margin-bottom: 28px;
   }
+
   &__btn {
     font-family: "SF Pro Display";
     font-weight: 600;
@@ -28,7 +29,7 @@
     cursor: pointer;
     position: absolute;
     right: 19px;
-    bottom: 19px;
+    bottom: 10px;
   }
 }
 .table {

@@ -7,7 +7,7 @@ const initialState = {
 export const sessionReducer = (state = initialState, action) => {
   switch (action.type) {
     case SET_SESSIONS:
-      return { ...state, sessions: action.payload };
+      return { ...state, sessions: [...state.sessions, ...action.payload] };
 
     default:
       return state;
