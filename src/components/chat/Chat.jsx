@@ -20,7 +20,7 @@ const Chat = () => {
   const { isLoading: isLoadingRead, fetchRead } = useReadMessage();
   const dispatch = useDispatch();
   const { chats } = useSelector((state) => state.chatsState);
-  console.log(chats);
+  // console.log(chats);
 
   useEffect(() => {
     fetchChats().then((data) => dispatch(setChatsAction(data)));

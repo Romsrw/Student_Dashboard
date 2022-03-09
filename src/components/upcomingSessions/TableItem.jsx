@@ -1,7 +1,9 @@
 import React from "react";
 import "./TableItem.scss";
 
-const TableItem = () => {
+const TableItem = ({ session }) => {
+  const {createdAt, title, certificate} = session;
+
   return (
     <tr>
       <td className="td_date">
@@ -14,10 +16,10 @@ const TableItem = () => {
       <td className="td_info">
         <div className="td_info__wrapper">
           <span className="td_info__session">
-            Database and Information Systems
+            {title}
           </span>
           <span className="td_info__certificate">
-            Master of Computer Science
+            {certificate}
           </span>
         </div>
       </td>

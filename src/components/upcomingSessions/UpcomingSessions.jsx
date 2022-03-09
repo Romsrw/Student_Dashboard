@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useGetSessions } from "./hooks/useGetSessions";
 import TableItem from "./TableItem";
 import "./UpcomingSessions.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { setSessionsAction } from "../../store/actions/sessionsActions";
 
 const UpcomingSessions = () => {
   const { isLoading, isLimitDone, fetchSessions } = useGetSessions();
-  console.log(isLoading);
+  const dispatch = useDispatch();
+  const { sessions } = useSelector((state) => state.sessionState);
+  console.log(sessions);
+
+  useEffect(() => {
+    fetchSessions().then((data) => dispatch(setSessionsAction(data)));
+  }, []);
+
   return (
     <section className="session_upcomming">
       <div className="timetable">
@@ -20,7 +29,9 @@ const UpcomingSessions = () => {
               </tr>
             </thead>
             <tbody>
-              <TableItem />
+              {sessions.map((session) => (
+                <TableItem session={session} key={session.id} />
+              ))}
             </tbody>
           </table>
         </div>
